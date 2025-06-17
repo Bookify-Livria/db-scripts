@@ -193,67 +193,67 @@ INSERT INTO CLIENTS (ID, USER_ID, NAME, PHONE, ADDRESS, CITY, COUNTRY, POSTAL_CO
 (60, 60, 'Benjamín Herrera', '+54 2901 123-456', 'Av. San Martín 13', 'Ushuaia', 'Argentina', '9410');
 
 -- BOOKS
-INSERT INTO BOOKS (ID, TITLE, DESCRIPTION, AUTHOR, PRICE, STOCK_COUNT, COVER_URL, GENRE, PUBLISHER, LANGUAGE, RATING_AVG, PAGE_COUNT, DISCOUNT_PERCENTAGE) VALUES
-(1, 'Cien años de soledad', 'La épica historia de la familia Buendía en Macondo.', 'Gabriel García Márquez', 45.90, 10, 'https://i.imgur.com/7N0UyUJ.jpg', 1, 'Editorial Sudamericana', 'es', 4.65, 432, 0.00),
-(2, 'Le dedico mi silencio', 'Una exploración de la música criolla y la identidad peruana.', 'Mario Vargas Llosa', 89.00, 10, 'https://i.imgur.com/qYcdX5Y.jpg', 1, 'Alfaguara', 'es', 4.20, 285, 0.00),
-(3, 'Sapiens: De animales a dioses', 'Una breve historia de la humanidad desde una perspectiva única.', 'Yuval Noah Harari', 99.00, 10, 'https://i.imgur.com/OxxhFPg.jpg', 3, 'Debate', 'es', 4.55, 496, 0.00),
-(4, 'Demon Slayer Vol. 1', 'Las aventuras de Tanjiro en su lucha contra los demonios.', 'Koyoharu Gotouge', 35.00, 10, 'https://i.imgur.com/aT2lqeB.jpg', 5, 'Panini Comics', 'es', 4.7, 192, 0.00),
+INSERT INTO BOOKS (ID, TITLE, DESCRIPTION, AUTHOR, PRICE, STOCK_COUNT, COVER_URL, GENRE, PUBLISHER, LANGUAGE, RATING_AVG, PAGE_COUNT) VALUES
+(1, 'Cien años de soledad', 'La épica historia de la familia Buendía en Macondo.', 'Gabriel García Márquez', 45.90, 10, 'https://i.imgur.com/7N0UyUJ.jpg', 1, 'Editorial Sudamericana', 'es', 4.65, 432),
+(2, 'Le dedico mi silencio', 'Una exploración de la música criolla y la identidad peruana.', 'Mario Vargas Llosa', 89.00, 10, 'https://i.imgur.com/qYcdX5Y.jpg', 1, 'Alfaguara', 'es', 4.20, 285),
+(3, 'Sapiens: De animales a dioses', 'Una breve historia de la humanidad desde una perspectiva única.', 'Yuval Noah Harari', 99.00, 10, 'https://i.imgur.com/OxxhFPg.jpg', 3, 'Debate', 'es', 4.55, 496),
+(4, 'Demon Slayer Vol. 1', 'Las aventuras de Tanjiro en su lucha contra los demonios.', 'Koyoharu Gotouge', 35.00, 10, 'https://i.imgur.com/aT2lqeB.jpg', 5, 'Panini Comics', 'es', 4.7, 192),
 (5, 'Alas de Sangre', 'Una historia de amor y guerra en un mundo fantástico.', 'Rebecca Yarros', 69.90, 10, 'https://i.imgur.com/T8huXJC.jpg', 4, 'Planeta', 'es', 4.30, 512, 0.00),
-(6, 'Pecas y Manchas', 'La historia de un cachorro que busca su lugar en el mundo.', 'Patricia del Río', 49.90, 10, 'https://i.imgur.com/qKk4mNJ.jpg', 6, 'SM Ediciones', 'es', 4.4, 48, 0.00),
-(7, 'El espía continental', 'La vida de Jacobo Hurwitz, educador y activista peruano.', 'Hugo Coya', 79.00, 10, 'https://i.imgur.com/WzCyZ9R.jpg', 3, 'Planeta', 'es', 4.10, 368, 0.00),
-(8, 'Huaco retrato', 'Una exploración de la identidad y el legado familiar.', 'Gabriela Wiener', 59.00, 10, 'https://i.imgur.com/keZAwqv.jpg', 1, 'Random House', 'es', 4.25, 264, 0.00),
-(9, 'El año del viento', 'Una novela sobre los primeros años del terror en el Perú.', 'Karina Pacheco', 65.00, 10, 'https://i.imgur.com/GzJkrNG.jpg', 1, 'Peisa', 'es', 4.15, 312, 0.00),
-(10, 'La felicidad', 'Una mirada crítica acerca de la felicidad en estos tiempos.', 'Gabriel Rolón', 99.00, 10, 'https://i.imgur.com/LmLDvBw.jpg', 3, 'Planeta', 'es', 4.35, 288, 0.00),
-(11, 'El psicoanalista', 'Un thriller psicológico que te atrapará desde el principio.', 'John Katzenbach', 55.50, 10, 'https://i.imgur.com/iLJcYw6.jpg', 2, 'Ediciones B', 'es', 4.45, 416, 0.00),
+(6, 'Pecas y Manchas', 'La historia de un cachorro que busca su lugar en el mundo.', 'Patricia del Río', 49.90, 10, 'https://i.imgur.com/qKk4mNJ.jpg', 6, 'SM Ediciones', 'es', 4.4, 48),
+(7, 'El espía continental', 'La vida de Jacobo Hurwitz, educador y activista peruano.', 'Hugo Coya', 79.00, 10, 'https://i.imgur.com/WzCyZ9R.jpg', 3, 'Planeta', 'es', 4.10, 368),
+(8, 'Huaco retrato', 'Una exploración de la identidad y el legado familiar.', 'Gabriela Wiener', 59.00, 10, 'https://i.imgur.com/keZAwqv.jpg', 1, 'Random House', 'es', 4.25, 264),
+(9, 'El año del viento', 'Una novela sobre los primeros años del terror en el Perú.', 'Karina Pacheco', 65.00, 10, 'https://i.imgur.com/GzJkrNG.jpg', 1, 'Peisa', 'es', 4.15, 312),
+(10, 'La felicidad', 'Una mirada crítica acerca de la felicidad en estos tiempos.', 'Gabriel Rolón', 99.00, 10, 'https://i.imgur.com/LmLDvBw.jpg', 3, 'Planeta', 'es', 4.35, 288),
+(11, 'El psicoanalista', 'Un thriller psicológico que te atrapará desde el principio.', 'John Katzenbach', 55.50, 10, 'https://i.imgur.com/iLJcYw6.jpg', 2, 'Ediciones B', 'es', 4.45, 416),
 (12, 'Tokyo Revengers Vol. 1', 'Viajes en el tiempo y pandillas juveniles.', 'Ken Wakui', 38.00, 10, 'https://i.imgur.com/XleP7rp.jpg', 5, 'Norma Editorial', 'es', 4.60, 208, 0.00),
-(13, 'Harry Potter y la piedra filosofal', 'El inicio de una aventura mágica.', 'J.K. Rowling', 75.00, 10, 'https://i.imgur.com/LlRTuVo.jpg', 4, 'Salamandra', 'es', 4.85, 256, 0.00),
+(13, 'Harry Potter y la piedra filosofal', 'El inicio de una aventura mágica.', 'J.K. Rowling', 75.00, 10, 'https://i.imgur.com/LlRTuVo.jpg', 4, 'Salamandra', 'es', 4.85, 256),
 (14, 'El monstruo de colores', 'Una historia infantil sobre las emociones.', 'Anna Llenas', 69.00, 10, 'https://i.imgur.com/JLPN24W.jpg', 6, 'Flamboyant', 'es', 4.70, 44, 0.00),
-(15, 'Breves respuestas a las grandes preguntas', 'Stephen Hawking responde a los misterios del universo.', 'Stephen Hawking', 89.90, 10, 'https://i.imgur.com/pygnPZR.jpg', 3, 'Crítica', 'es', 4.40, 256, 0.00),
+(15, 'Breves respuestas a las grandes preguntas', 'Stephen Hawking responde a los misterios del universo.', 'Stephen Hawking', 89.90, 10, 'https://i.imgur.com/pygnPZR.jpg', 3, 'Crítica', 'es', 4.40, 256),
 (16, 'Atomic Habits', 'Transforma tu vida con pequeños hábitos.', 'James Clear', 92.00, 10, 'https://i.imgur.com/ySvnNSr.jpg', 7, 'Paidós', 'es', 4.55, 320, 0.00),
-(17, 'Rich Dad Poor Dad', 'Lo que los ricos enseñan a sus hijos sobre el dinero.', 'Robert T. Kiyosaki', 88.50, 10, 'https://i.imgur.com/HxWuHl6.jpg', 3, 'Plata Publishing', 'en', 4.25, 336, 0.00),
+(17, 'Rich Dad Poor Dad', 'Lo que los ricos enseñan a sus hijos sobre el dinero.', 'Robert T. Kiyosaki', 88.50, 10, 'https://i.imgur.com/HxWuHl6.jpg', 3, 'Plata Publishing', 'en', 4.25, 336),
 (18, 'The Great Gatsby', 'La decadencia y la esperanza en los años 20.', 'F. Scott Fitzgerald', 59.90, 10, 'https://i.imgur.com/4rfFsTt.jpg', 2, 'Scribner', 'en', 4.30, 180, 0.00),
 (19, 'Where the Crawdads Sing', 'Un misterio rural con toques poéticos.', 'Delia Owens', 66.60, 10, 'https://i.imgur.com/8RYCAod.jpg', 2, 'G.P. Putnam Sons', 'en', 4.50, 384, 0.00),
-(20, 'The Subtle Art of Not Giving a F*ck', 'Un enfoque distinto para vivir una buena vida.', 'Mark Manson', 85.00, 10, 'https://i.imgur.com/Cs3BWqf.jpg', 7, 'HarperOne', 'en', 4.15, 224, 0.00),
-(21, 'El Principito', 'Una historia filosófica disfrazada de cuento infantil.', 'Antoine de Saint-Exupéry', 39.90, 10, 'https://i.imgur.com/SW4tXtE.jpg', 6, 'Salamandra', 'es', 4.94, 96, 0.00),
-(22, 'El hombre en busca de sentido', 'Reflexiones de Viktor Frankl desde un campo de concentración.', 'Viktor E. Frankl', 62.00, 10, 'https://i.imgur.com/266v2kG.jpg', 3, 'Herder', 'es', 4.75, 192, 0.00),
-(23, 'Norwegian Wood', 'Una historia de amor y pérdida en el Japón de los 60.', 'Haruki Murakami', 75.50, 10, 'https://i.imgur.com/ib88EDi.jpg', 1, 'Tusquets Editores', 'es', 4.35, 384, 0.00),
-(24, 'Assassination Classroom Vol. 1', 'Una clase con una misión: matar a su maestro alienígena.', 'Yusei Matsui', 35.90, 10, 'https://i.imgur.com/bbLZh7s.jpg', 5, 'Norma Editorial', 'es', 4.60, 192, 0.00),
-(25, 'Los juegos del hambre', 'Una lucha por sobrevivir en un futuro distópico.', 'Suzanne Collins', 78.00, 10, 'https://i.imgur.com/lziMVpt.jpg', 4, 'RBA Molino', 'es', 4.40, 384, 0.00),
-(26, 'El monstruo del armario existe... y tú puedes vencerlo', 'Una guía emocional para niños con miedo.', 'Luis Gutiérrez Rojas', 44.00, 10, 'https://i.imgur.com/cPsgods.jpg', 6, 'Beascoa', 'es', 4.40, 64, 0.00),
+(20, 'The Subtle Art of Not Giving a F*ck', 'Un enfoque distinto para vivir una buena vida.', 'Mark Manson', 85.00, 10, 'https://i.imgur.com/Cs3BWqf.jpg', 7, 'HarperOne', 'en', 4.15, 224),
+(21, 'El Principito', 'Una historia filosófica disfrazada de cuento infantil.', 'Antoine de Saint-Exupéry', 39.90, 10, 'https://i.imgur.com/SW4tXtE.jpg', 6, 'Salamandra', 'es', 4.94, 96),
+(22, 'El hombre en busca de sentido', 'Reflexiones de Viktor Frankl desde un campo de concentración.', 'Viktor E. Frankl', 62.00, 10, 'https://i.imgur.com/266v2kG.jpg', 3, 'Herder', 'es', 4.75, 192),
+(23, 'Norwegian Wood', 'Una historia de amor y pérdida en el Japón de los 60.', 'Haruki Murakami', 75.50, 10, 'https://i.imgur.com/ib88EDi.jpg', 1, 'Tusquets Editores', 'es', 4.35, 384),
+(24, 'Assassination Classroom Vol. 1', 'Una clase con una misión: matar a su maestro alienígena.', 'Yusei Matsui', 35.90, 10, 'https://i.imgur.com/bbLZh7s.jpg', 5, 'Norma Editorial', 'es', 4.60, 192),
+(25, 'Los juegos del hambre', 'Una lucha por sobrevivir en un futuro distópico.', 'Suzanne Collins', 78.00, 10, 'https://i.imgur.com/lziMVpt.jpg', 4, 'RBA Molino', 'es', 4.40, 384),
+(26, 'El monstruo del armario existe... y tú puedes vencerlo', 'Una guía emocional para niños con miedo.', 'Luis Gutiérrez Rojas', 44.00, 10, 'https://i.imgur.com/cPsgods.jpg', 6, 'Beascoa', 'es', 4.40, 64),
 (27, 'Una tierra prometida', 'Las memorias del expresidente Barack Obama.', 'Barack Obama', 99.90, 10, 'https://i.imgur.com/8a5tmBa.jpg', 3, 'Debate', 'es', 4.45, 768, 0.00),
-(28, 'El amante japonés', 'Una historia de amor y secretos a lo largo de los años.', 'Isabel Allende', 65.00, 10, 'https://i.imgur.com/xaqvcCs.jpg', 1, 'Plaza & Janés', 'es', 4.20, 336, 0.00),
-(29, 'Berserk Vol. 1', 'La historia oscura y brutal de Guts, el guerrero negro.', 'Kentaro Miura', 48.90, 10, 'https://i.imgur.com/iokXCCA.jpg', 5, 'Panini Comics', 'es', 4.80, 224, 0.00),
+(28, 'El amante japonés', 'Una historia de amor y secretos a lo largo de los años.', 'Isabel Allende', 65.00, 10, 'https://i.imgur.com/xaqvcCs.jpg', 1, 'Plaza & Janés', 'es', 4.20, 336),
+(29, 'Berserk Vol. 1', 'La historia oscura y brutal de Guts, el guerrero negro.', 'Kentaro Miura', 48.90, 10, 'https://i.imgur.com/iokXCCA.jpg', 5, 'Panini Comics', 'es', 4.80, 224),
 (30, 'Heartstopper Vol. 1', 'Un tierno romance juvenil entre dos chicos.', 'Alice Oseman', 69.00, 10, 'https://i.imgur.com/8QiD1Y2.jpg', 4, 'Crossbooks', 'es', 4.75, 288, 0.00),
-(31, 'El poder del ahora', 'Una guía espiritual para encontrar la paz interior.', 'Eckhart Tolle', 82.50, 10, 'https://i.imgur.com/ewZIeEX.jpg', 7, 'Gaia Ediciones', 'es', 4.25, 256, 0.00),
-(32, 'Educated', 'Una memoria poderosa sobre la superación y la educación.', 'Tara Westover', 74.00, 10, 'https://i.imgur.com/HmeAu1i.jpg', 3, 'Random House', 'en', 4.60, 352, 0.00),
-(33, 'The Catcher in the Rye', 'La clásica novela sobre la adolescencia y la alienación.', 'J.D. Salinger', 56.90, 10, 'https://i.imgur.com/1fhRsuD.jpg', 2, 'Little, Brown', 'en', 4.20, 234, 0.00),
+(31, 'El poder del ahora', 'Una guía espiritual para encontrar la paz interior.', 'Eckhart Tolle', 82.50, 10, 'https://i.imgur.com/ewZIeEX.jpg', 7, 'Gaia Ediciones', 'es', 4.25, 256),
+(32, 'Educated', 'Una memoria poderosa sobre la superación y la educación.', 'Tara Westover', 74.00, 10, 'https://i.imgur.com/HmeAu1i.jpg', 3, 'Random House', 'en', 4.60, 352),
+(33, 'The Catcher in the Rye', 'La clásica novela sobre la adolescencia y la alienación.', 'J.D. Salinger', 56.90, 10, 'https://i.imgur.com/1fhRsuD.jpg', 2, 'Little, Brown', 'en', 4.20, 234),
 (34, 'It Ends with Us', 'Una historia de amor y decisiones difíciles.', 'Colleen Hoover', 76.00, 10, 'https://i.imgur.com/CNzmVps.jpg', 2, 'Atria Books', 'en', 4.35, 384, 0.00),
 (35, 'Dune', 'La legendaria saga de ciencia ficción en Arrakis.', 'Frank Herbert', 90.00, 10, 'https://i.imgur.com/9mRfFoz.jpg', 2, 'Debolsillo', 'es', 4.70, 688, 0.00),
-(36, 'La sombra del viento', 'Un misterio literario ambientado en la Barcelona de posguerra.', 'Carlos Ruiz Zafón', 78.90, 10, 'https://i.imgur.com/MWdPjUU.jpg', 1, 'Planeta', 'es', 4.65, 576, 0.00),
-(37, 'Naruto Vol. 1', 'El comienzo del viaje de Naruto para ser Hokage.', 'Masashi Kishimoto', 32.00, 10, 'https://i.imgur.com/ao5qPA8.jpg', 5, 'Panini Comics', 'es', 4.85, 192, 0.00),
-(38, 'Cazadores de sombras: Ciudad de hueso', 'Una joven descubre un mundo oculto de demonios y nefilim.', 'Cassandra Clare', 69.00, 10, 'https://i.imgur.com/Xpg0K9N.jpg', 4, 'Destino', 'es', 4.45, 512, 0.00),
-(39, 'La ovejita que vino a cenar', 'Una entrañable historia infantil sobre la amistad.', 'Steve Smallman', 42.00, 10, 'https://i.imgur.com/O4HqZeK.jpg', 6, 'Beascoa', 'es', 4.70, 32, 0.00),
-(40, "Can\'t Hurt Me", 'David Goggins y su brutal historia de superación personal.', 'David Goggins', 86.00, 10, 'https://i.imgur.com/ZKsk3lz.jpg', 7, 'Lioncrest Publishing', 'en', 4.50, 366, 0.00),
+(36, 'La sombra del viento', 'Un misterio literario ambientado en la Barcelona de posguerra.', 'Carlos Ruiz Zafón', 78.90, 10, 'https://i.imgur.com/MWdPjUU.jpg', 1, 'Planeta', 'es', 4.65, 576),
+(37, 'Naruto Vol. 1', 'El comienzo del viaje de Naruto para ser Hokage.', 'Masashi Kishimoto', 32.00, 10, 'https://i.imgur.com/ao5qPA8.jpg', 5, 'Panini Comics', 'es', 4.85, 192),
+(38, 'Cazadores de sombras: Ciudad de hueso', 'Una joven descubre un mundo oculto de demonios y nefilim.', 'Cassandra Clare', 69.00, 10, 'https://i.imgur.com/Xpg0K9N.jpg', 4, 'Destino', 'es', 4.45, 512),
+(39, 'La ovejita que vino a cenar', 'Una entrañable historia infantil sobre la amistad.', 'Steve Smallman', 42.00, 10, 'https://i.imgur.com/O4HqZeK.jpg', 6, 'Beascoa', 'es', 4.70, 32),
+(40, "Can\'t Hurt Me", 'David Goggins y su brutal historia de superación personal.', 'David Goggins', 86.00, 10, 'https://i.imgur.com/ZKsk3lz.jpg', 7, 'Lioncrest Publishing', 'en', 4.50, 366),
 (41, 'Rayuela', 'Una novela experimental sobre el amor y el caos.', 'Julio Cortázar', 84.00, 10, 'https://i.imgur.com/OELzMY1.jpg', 1, 'Cátedra', 'es', 4.25, 736, 0.00),
-(42, 'El código Da Vinci', 'Una carrera contra el tiempo para descubrir un secreto antiguo.', 'Dan Brown', 59.90, 10, 'https://i.imgur.com/Ff2WTd9.jpg', 2, 'Planeta', 'es', 4.15, 592, 0.00),
+(42, 'El código Da Vinci', 'Una carrera contra el tiempo para descubrir un secreto antiguo.', 'Dan Brown', 59.90, 10, 'https://i.imgur.com/Ff2WTd9.jpg', 2, 'Planeta', 'es', 4.15, 592),
 (43, 'Atomic Habits', 'Pequeños cambios que generan grandes resultados.', 'James Clear', 92.00, 10, 'https://i.imgur.com/I6uTnBU.jpg', 3, 'Avery Publishing', 'en', 4.55, 320, 0.00),
-(44, 'Chainsaw Man Vol. 1', 'Un joven caza demonios que se convierte en uno.', 'Tatsuki Fujimoto', 34.90, 10, 'https://i.imgur.com/Mqy1taV.jpg', 5, 'Norma Editorial', 'es', 4.65, 200, 0.00),
-(45, 'A todos los chicos de los que me enamoré', 'Una adolescente enfrenta las consecuencias de sus cartas de amor secretas.', 'Jenny Han', 66.00, 10, 'https://i.imgur.com/OwT6aqb.jpg', 4, 'Crossbooks', 'es', 4.30, 368, 0.00),
+(44, 'Chainsaw Man Vol. 1', 'Un joven caza demonios que se convierte en uno.', 'Tatsuki Fujimoto', 34.90, 10, 'https://i.imgur.com/Mqy1taV.jpg', 5, 'Norma Editorial', 'es', 4.65, 200),
+(45, 'A todos los chicos de los que me enamoré', 'Una adolescente enfrenta las consecuencias de sus cartas de amor secretas.', 'Jenny Han', 66.00, 10, 'https://i.imgur.com/OwT6aqb.jpg', 4, 'Crossbooks', 'es', 4.30, 368),
 (46, '¿Dónde está Jhosep?', 'Un divertido libro interactivo para los más pequeños.', 'Eric Hill', 38.90, 10, 'https://i.imgur.com/klJb51R.jpg', 6, 'Kokinos', 'es', 4.80, 24, 0.00),
 (47, 'Becoming', 'Las memorias inspiradoras de Michelle Obama.', 'Michelle Obama', 85.00, 10, 'https://i.imgur.com/a6MOHKf.jpg', 3, 'Plaza & Janés', 'es', 4.70, 448, 0.00),
-(48, 'Crónica de una muerte anunciada', 'Un asesinato anunciado y la indiferencia de un pueblo.', 'Gabriel García Márquez', 49.90, 10, 'https://i.imgur.com/PD3nLNU.jpg', 1, 'Diana', 'es', 4.55, 128, 0.00),
+(48, 'Crónica de una muerte anunciada', 'Un asesinato anunciado y la indiferencia de un pueblo.', 'Gabriel García Márquez', 49.90, 10, 'https://i.imgur.com/PD3nLNU.jpg', 1, 'Diana', 'es', 4.55, 128),
 (49, 'One Piece Vol. 1', 'El inicio de la gran aventura pirata de Luffy.', 'Eiichiro Oda', 35.90, 10, 'https://i.imgur.com/N6IUatX.jpg', 5, 'Panini Comics', 'es', 4.90, 208, 0.00),
-(50, 'El corredor del laberinto', 'Un grupo de adolescentes atrapados en un misterioso laberinto.', 'James Dashner', 68.00, 10, 'https://i.imgur.com/SD7E8uE.jpg', 4, 'V&R Editoras', 'es', 4.25, 384, 0.00),
-(51, 'Harry Potter y la piedra filosofal', 'El inicio de la historia del joven mago más famoso.', 'J.K. Rowling', 89.00, 10, 'https://i.imgur.com/255VnVx.jpg', 2, 'Salamandra', 'es', 4.85, 256, 0.00),
-(52, 'Cómo ganar amigos e influir sobre las personas', 'Claves para mejorar tus relaciones y tu éxito.', 'Dale Carnegie', 54.00, 10, 'https://i.imgur.com/fJU1ijK.jpg', 7, 'Sudamericana', 'es', 4.40, 320, 0.00),
+(50, 'El corredor del laberinto', 'Un grupo de adolescentes atrapados en un misterioso laberinto.', 'James Dashner', 68.00, 10, 'https://i.imgur.com/SD7E8uE.jpg', 4, 'V&R Editoras', 'es', 4.25, 384),
+(51, 'Harry Potter y la piedra filosofal', 'El inicio de la historia del joven mago más famoso.', 'J.K. Rowling', 89.00, 10, 'https://i.imgur.com/255VnVx.jpg', 2, 'Salamandra', 'es', 4.85, 256),
+(52, 'Cómo ganar amigos e influir sobre las personas', 'Claves para mejorar tus relaciones y tu éxito.', 'Dale Carnegie', 54.00, 10, 'https://i.imgur.com/fJU1ijK.jpg', 7, 'Sudamericana', 'es', 4.40, 320),
 (53, 'The Alchemist', 'La búsqueda espiritual de un joven pastor andaluz.', 'Paulo Coelho', 69.50, 10, 'https://i.imgur.com/WxQ0WbU.jpg', 2, 'HarperOne', 'en', 4.35, 163, 0.00),
 (54, '1984', 'Un futuro distópico dominado por un estado totalitario.', 'George Orwell', 63.90, 10, 'https://i.imgur.com/wfhMIJ8.jpg', 2, 'Debolsillo', 'es', 4.60, 352, 0.00),
-(55, 'Las chicas del cable', 'La lucha de mujeres por su libertad en la España de los años 20.', 'Alba Quintas', 72.00, 10, 'https://i.imgur.com/hC7o8B1.jpg', 1, 'Suma', 'es', 4.20, 416, 0.00),
+(55, 'Las chicas del cable', 'La lucha de mujeres por su libertad en la España de los años 20.', 'Alba Quintas', 72.00, 10, 'https://i.imgur.com/hC7o8B1.jpg', 1, 'Suma', 'es', 4.20, 416),
 (56, 'Pokémon: Vol. 1', 'Las primeras aventuras de Ash y Pikachu.', 'Hidenori Kusaka', 30.00, 10, 'https://i.imgur.com/nAqhgZ7.jpg', 5, 'Norma Editorial', 'es', 4.70, 200, 0.00),
 (57, 'After', 'Una historia de amor intensa y conflictiva.', 'Anna Todd', 75.00, 10, 'https://i.imgur.com/7cVfusm.jpg', 4, 'Planeta', 'es', 4.10, 592, 0.00),
-(58, 'Cuentos para entender el mundo', 'Historias breves para reflexionar sobre la vida.', 'Eloy Moreno', 50.00, 10, 'https://i.imgur.com/6Az3jGf.jpg', 6, 'Nube de Tinta', 'es', 4.50, 208, 0.00),
+(58, 'Cuentos para entender el mundo', 'Historias breves para reflexionar sobre la vida.', 'Eloy Moreno', 50.00, 10, 'https://i.imgur.com/6Az3jGf.jpg', 6, 'Nube de Tinta', 'es', 4.50, 208),
 (59, 'Steve Jobs', 'La biografía oficial del fundador de Apple.', 'Walter Isaacson', 98.00, 10, 'https://i.imgur.com/QjHYICU.jpg', 3, 'Debate', 'es', 4.55, 656, 0.00),
-(60, '12 reglas para vivir', 'Consejos para enfrentar el caos del mundo moderno.', 'Jordan B. Peterson', 95.00, 10, 'https://i.imgur.com/5zxXAQ2.jpg', 7, 'Planeta', 'es', 4.30, 448, 0.00);
+(60, '12 reglas para vivir', 'Consejos para enfrentar el caos del mundo moderno.', 'Jordan B. Peterson', 95.00, 10, 'https://i.imgur.com/5zxXAQ2.jpg', 7, 'Planeta', 'es', 4.30, 448);
 
 -- REVIEWS
 INSERT INTO REVIEWS (USER_ID, BOOK_ID, RATING, COMMENT) VALUES
@@ -2120,12 +2120,7 @@ INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
 (8, 39, 'post'),  -- Usuario 8 es miembro de comunidad 10
 
 -- Post 40 (USER_ID: 8, COMMUNITY_ID: 10, LIKE_COUNT: 1)
-(6, 40, 'post');  -- Usuario 6 es miembro de comunidad 10
-
--- LIKES TABLE INSERTS - PARTE 2
--- LIKES PARA COMMENTS
-
-INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
+(6, 40, 'post'),  -- Usuario 6 es miembro de comunidad 10
 
 -- LIKES PARA COMENTARIOS --
 
@@ -2202,13 +2197,9 @@ INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
 
 -- Comment ID 25 (USER_ID: 9, POST_ID: 35, LIKE_COUNT: 2)
 (11, 25, 'comment'), -- Usuario 11 es miembro de comunidad 9
-(14, 25, 'comment'); -- Usuario 14 es miembro de comunidad 9
+(14, 25, 'comment'), -- Usuario 14 es miembro de comunidad 9
 
 -- Comment ID 26 (USER_ID: 14, POST_ID: 36, LIKE_COUNT: 0) - Sin likes
-
-INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
-
--- LIKES PARA POSTS --
 
 -- Post 41 (USER_ID: 21, COMMUNITY_ID: 11, LIKE_COUNT: 0) - Sin likes
 
@@ -2574,12 +2565,8 @@ INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
 (35, 30, 'comment'),
 
 -- Comentarios del Post 76
-(32, 32, 'comment');  -- Comment ID 32 tiene 2 likes
-(34, 32, 'comment');
-
-INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
-
--- LIKES PARA POSTS --
+(32, 32, 'comment'),  -- Comment ID 32 tiene 2 likes
+(34, 32, 'comment'),
 
 -- Post 77 (Fantasía de tinta - USER_ID 38, LIKE_COUNT: 3)
 (40, 77, 'post'), -- Miembro activo de la comunidad
@@ -2880,79 +2867,608 @@ INSERT INTO LIKES (USER_ID, LIKEABLE_ID, LIKEABLE_TYPE) VALUES
 (12, 22, 'comment'), -- Like al segundo comentario
 
 -- Comentarios del Post 100 (Amamos el drama)
-(2, 12, 'comment'), -- Like al comentario
-
--- CART
-INSERT INTO CART (ID, USER_ID, TOTAL_PRICE, CREATED_AT) VALUES
-(1, 1, 45.85, '2024-02-25 10:30:00'),
-(2, 2, 22.50, '2024-02-25 14:15:00'),
-(3, 3, 61.40, '2024-02-25 16:45:00'),
-(4, 5, 35.90, '2024-02-25 19:20:00');
-
--- CART_ITEM
-INSERT INTO CART_ITEM (ID, QUANTITY, UNIT_PRICE, CART_ID, BOOK_ID) VALUES
-(1, 1, 18.95, 1, 1),
-(2, 1, 19.13, 1, 2), -- Dune con descuento 15%
-(3, 1, 7.77, 1, 3),  -- Ender sin descuento
-(4, 1, 19.13, 2, 2), -- Dune con descuento
-(5, 2, 17.95, 3, 7), -- 2 Harry Potter
-(6, 1, 22.46, 3, 4), -- Pilares con descuento 10%
-(7, 1, 15.96, 4, 5), -- Da Vinci con descuento 20%
-(8, 1, 18.50, 4, 8); -- Silencio de los Corderos
+(2, 12, 'comment'); -- Like al comentario
 
 -- ORDERS
 INSERT INTO ORDERS (ID, USER_ID, CLIENT_ID, TOTAL_AMOUNT, STATUS, NOTES, CREATED_AT, SHIPPED_AT, DELIVERED_AT) VALUES
-(1, 1, 1, 41.45, 'delivered', 'Entrega en horario de mañana por favor', '2024-02-15 11:30:00', '2024-02-17 09:15:00', '2024-02-19 16:20:00'),
-(2, 2, 3, 16.90, 'delivered', NULL, '2024-02-18 14:20:00', '2024-02-20 10:30:00', '2024-02-22 12:45:00'),
-(3, 3, 4, 35.90, 'shipped', 'Llamar antes de entregar', '2024-02-22 16:15:00', '2024-02-24 08:45:00', NULL),
-(4, 4, 5, 19.13, 'processing', NULL, '2024-02-24 10:30:00', NULL, NULL),
-(5, 5, 6, 37.00, 'confirmed', 'Envío urgente', '2024-02-25 09:15:00', NULL, NULL);
+(1, 1, 1, 134.90, 'delivered', 'Entrega en horario de oficina preferiblemente', '2024-01-20 14:30:00', '2024-01-22 09:15:00', '2024-01-24 16:45:00'),
+(2, 2, 2, 89.00, 'delivered', 'Dejar en portería si no hay nadie', '2024-02-05 10:15:00', '2024-02-07 11:30:00', '2024-02-09 14:20:00'),
+(3, 3, 3, 198.90, 'delivered', 'Cliente prefiere entrega en fines de semana', '2024-01-30 16:45:00', '2024-02-01 08:20:00', '2024-02-03 13:10:00'),
+(4, 4, 4, 125.60, 'delivered', 'Envío urgente solicitado', '2024-03-15 09:20:00', '2024-03-16 14:30:00', '2024-03-18 11:15:00'),
+(5, 5, 5, 234.50, 'delivered', 'Pedido de cumpleaños - envolver por favor', '2024-02-22 11:30:00', '2024-02-24 10:45:00', '2024-02-26 15:30:00'),
+(6, 6, 6, 156.90, 'delivered', 'Dirección de entrega diferente a facturación', '2024-03-08 15:20:00', '2024-03-10 12:15:00', '2024-03-12 17:40:00'),
+(7, 7, 7, 85.00, 'delivered', 'Primera compra - cliente nuevo', '2024-01-12 18:45:00', '2024-01-14 09:30:00', '2024-01-16 14:25:00'),
+(8, 8, 8, 278.00, 'delivered', 'Pedido corporativo para biblioteca', '2024-04-20 13:10:00', '2024-04-22 11:20:00', '2024-04-24 16:50:00'),
+(9, 9, 9, 145.80, 'delivered', 'Cliente solicita factura con datos fiscales', '2024-02-16 12:35:00', '2024-02-18 08:45:00', '2024-02-20 15:20:00'),
+(10, 10, 10, 204.90, 'delivered', 'Entrega en universidad - coordinar con portería', '2024-03-25 14:50:00', '2024-03-27 10:30:00', '2024-03-29 13:45:00'),
+(11, 11, 11, 167.00, 'delivered', 'Cliente coleccionista - cuidado especial en empaque', '2024-02-01 16:20:00', '2024-02-03 09:40:00', '2024-02-05 14:15:00'),
+(12, 12, 12, 193.80, 'delivered', 'Pedido para regalo - incluir tarjeta', '2024-04-10 11:25:00', '2024-04-12 13:50:00', '2024-04-14 16:30:00'),
+(13, 13, 13, 128.00, 'delivered', 'Entrega en zona rural - confirmar disponibilidad', '2024-02-27 09:15:00', '2024-03-01 11:40:00', '2024-03-03 15:25:00'),
+(14, 14, 14, 244.90, 'delivered', 'Cliente VIP - prioridad alta', '2024-03-18 17:30:00', '2024-03-20 08:15:00', '2024-03-22 12:50:00'),
+(15, 15, 15, 114.90, 'delivered', 'Pedido educativo para centro de estudios', '2024-01-25 13:40:00', '2024-01-27 10:20:00', '2024-01-29 16:35:00'),
+(16, 16, 16, 189.50, 'delivered', 'Coordinar entrega con administración del edificio', '2024-04-15 10:55:00', '2024-04-17 14:25:00', '2024-04-19 11:40:00'),
+(17, 17, 17, 158.00, 'delivered', 'Cliente solicita empaque ecológico', '2024-02-10 15:45:00', '2024-02-12 09:30:00', '2024-02-14 13:20:00'),
+(18, 18, 18, 176.90, 'delivered', 'Entrega express - mismo día', '2024-03-30 08:20:00', '2024-03-30 16:45:00', '2024-03-31 10:15:00'),
+(19, 19, 19, 97.00, 'delivered', 'Segunda compra del cliente - descuento aplicado', '2024-01-20 12:30:00', '2024-01-22 11:15:00', '2024-01-24 14:50:00'),
+(20, 20, 20, 223.80, 'delivered', 'Pedido internacional - documentación especial', '2024-04-08 16:10:00', '2024-04-10 13:25:00', '2024-04-12 17:15:00'),
+(21, 21, 21, 142.50, 'delivered', 'Cliente prefiere SMS para notificaciones', '2024-02-14 11:20:00', '2024-02-16 08:50:00', '2024-02-18 15:40:00'),
+(22, 22, 22, 186.00, 'delivered', 'Entrega bilingüe - francés/español', '2024-03-20 14:35:00', '2024-03-22 12:10:00', '2024-03-24 16:25:00'),
+(23, 23, 23, 125.90, 'delivered', 'Zona tropical - protección extra contra humedad', '2024-01-28 17:15:00', '2024-01-30 09:45:00', '2024-02-01 13:30:00'),
+(24, 24, 24, 159.90, 'delivered', 'Cliente pequeño país - envío consolidado', '2024-04-25 10:40:00', '2024-04-27 14:20:00', '2024-04-29 11:55:00'),
+(25, 25, 25, 203.60, 'delivered', 'Entrega en zona caribeña - considerar festivales locales', '2024-03-02 13:25:00', '2024-03-04 11:35:00', '2024-03-06 15:10:00'),
+(26, 26, 26, 178.50, 'shipped', 'Cliente isleño - coordinar con servicios marítimos', '2024-03-10 15:50:00', '2024-03-12 10:30:00', NULL),
+(27, 27, 27, 164.90, 'shipped', 'Entrega bilingüe francés - Montreal', '2024-01-15 09:30:00', '2024-01-17 12:45:00', NULL),
+(28, 28, 28, 191.60, 'shipped', 'Costa oeste - coordinar con zona horaria', '2024-04-18 16:25:00', '2024-04-20 08:40:00', NULL),
+(29, 29, 29, 147.90, 'shipped', 'California - entrega ecológica solicitada', '2024-02-08 12:15:00', '2024-02-10 15:30:00', NULL),
+(30, 30, 30, 236.50, 'shipped', 'Texas - pedido grande, confirmar capacidad vehículo', '2024-03-28 11:40:00', '2024-03-30 14:20:00', NULL),
+(31, 31, 31, 123.90, 'processing', 'Florida - temporada alta turística', '2024-01-10 14:20:00', NULL, NULL),
+(32, 32, 32, 198.80, 'processing', 'Chicago - considerar condiciones climáticas', '2024-05-01 10:35:00', NULL, NULL),
+(33, 33, 33, 172.40, 'processing', 'Seattle - cliente solicita entrega en días secos', '2024-02-20 16:45:00', NULL, NULL),
+(34, 34, 34, 215.50, 'processing', 'Boston - zona universitaria, horario restringido', '2024-03-15 13:30:00', NULL, NULL),
+(35, 35, 35, 184.00, 'processing', 'Atlanta - entrega sur, considerar tráfico', '2024-01-30 09:25:00', NULL, NULL),
+(36, 36, 36, 167.90, 'confirmed', 'Denver - altitud alta, empaque especial', '2024-04-11 15:15:00', NULL, NULL),
+(37, 37, 37, 156.40, 'confirmed', 'Phoenix - evitar horarios de calor extremo', '2024-02-25 12:50:00', NULL, NULL),
+(38, 38, 38, 143.80, 'confirmed', 'Portland - cliente eco-consciente', '2024-03-18 17:20:00', NULL, NULL),
+(39, 39, 39, 201.50, 'confirmed', 'Las Vegas - entrega nocturna preferida', '2024-01-21 14:40:00', NULL, NULL),
+(40, 40, 40, 178.90, 'confirmed', 'Nashville - zona musical, cuidado con eventos', '2024-04-15 11:30:00', NULL, NULL),
+(41, 41, 41, 189.60, 'pending', 'Detroit - zona industrial, confirmar dirección', '2024-02-11 16:10:00', NULL, NULL),
+(42, 42, 42, 165.30, 'pending', 'Minneapolis - gemelas ciudades, verificar ubicación', '2024-03-30 10:20:00', NULL, NULL),
+(43, 43, 43, 234.80, 'pending', 'Rio de Janeiro - carioca, entrega con samba', '2024-01-25 13:45:00', NULL, NULL),
+(44, 44, 44, 156.90, 'pending', 'Salvador Bahia - considerar festivales culturales', '2024-04-21 15:35:00', NULL, NULL),
+(45, 45, 45, 187.50, 'pending', 'Porto Alegre - gaúcho, entrega con chimarrão', '2024-02-18 11:55:00', NULL, NULL),
+(46, 46, 46, 198.40, 'delivered', 'Belo Horizonte - mineiro, trato cordial', '2024-03-08 14:25:00', '2024-03-10 09:40:00', '2024-03-12 16:30:00'),
+(47, 47, 47, 143.90, 'delivered', 'Manaus - Amazonía, protección contra humedad', '2024-01-18 12:30:00', '2024-01-20 10:15:00', '2024-01-22 15:45:00'),
+(48, 48, 48, 176.80, 'delivered', 'Fortaleza - Ceará, entrega con sotaque nordestino', '2024-05-01 16:50:00', '2024-05-03 11:20:00', '2024-05-05 14:35:00'),
+(49, 49, 49, 164.40, 'delivered', 'Recife - Pernambuco, coordinar con mareas', '2024-02-15 09:40:00', '2024-02-17 13:25:00', '2024-02-19 17:10:00'),
+(50, 50, 50, 192.30, 'delivered', 'Curitiba - capital ecológica, empaque verde', '2024-03-25 11:15:00', '2024-03-27 08:30:00', '2024-03-29 14:50:00'),
+(51, 51, 51, 158.70, 'shipped', 'Goiânia - centro-oeste, confirmar logística', '2024-01-11 15:20:00', '2024-01-13 12:45:00', NULL),
+(52, 52, 52, 185.60, 'shipped', 'Campo Grande - Pantanal, cuidado con fauna', '2024-04-18 10:35:00', '2024-04-20 14:50:00', NULL),
+(53, 53, 53, 167.90, 'processing', 'Córdoba - corazón argentino, entrega cordial', '2024-03-01 13:40:00', NULL, NULL),
+(54, 54, 54, 194.80, 'processing', 'Rosario - ciudad de letras, trato literario', '2024-03-21 16:25:00', NULL, NULL),
+(55, 55, 55, 142.50, 'confirmed', 'Mendoza - tierra de vinos, entrega entre viñedos', '2024-01-28 12:10:00', NULL, NULL),
+(56, 56, 56, 178.90, 'confirmed', 'Tucumán - jardín de la república, entrega florida', '2024-04-11 14:55:00', NULL, NULL),
+(57, 57, 57, 165.40, 'pending', 'Mar del Plata - ciudad costera, entrega con brisa marina', '2024-02-21 11:30:00', NULL, NULL),
+(58, 58, 58, 189.20, 'pending', 'Salta - norte argentino, entrega en altura', '2024-03-15 17:15:00', NULL, NULL),
+(59, 59, 59, 156.80, 'delivered', 'Neuquén - Patagonia, coordinar con vientos', '2024-01-21 09:45:00', '2024-01-23 11:20:00', '2024-01-25 15:35:00'),
+(60, 60, 60, 203.70, 'delivered', 'Ushuaia - fin del mundo, inicio de aventuras literarias', '2024-04-25 13:20:00', '2024-04-27 16:40:00', '2024-04-29 12:15:00');
 
 -- ORDERS_ITEM
 INSERT INTO ORDERS_ITEM (ID, ORDER_ID, BOOK_ID, QUANTITY, UNIT_PRICE) VALUES
-(1, 1, 1, 1, 18.95),
-(2, 1, 4, 1, 22.50),
-(3, 2, 3, 1, 16.90),
-(4, 3, 7, 2, 17.95),
-(5, 4, 2, 1, 19.13),
-(6, 5, 5, 1, 15.96),
-(7, 5, 6, 1, 21.00);
+-- Orden 1
+(1, 1, 1, 1, 45.90),  -- Cien años de soledad
+(2, 1, 2, 1, 89.00),  -- Le dedico mi silencio
+
+-- Orden 2
+(3, 2, 2, 1, 89.00),  -- Le dedico mi silencio
+
+-- Orden 3
+(4, 3, 3, 2, 99.00),  -- Sapiens (2 unidades)
+(5, 3, 21, 1, 39.90),  -- El Principito (con descuento)
+
+-- Orden 4
+(6, 4, 4, 2, 35.00),  -- Demon Slayer Vol. 1 (2 unidades)
+(7, 4, 11, 1, 55.50),  -- El psicoanalista
+
+-- Orden 5: Total 234.50
+(8, 5, 5, 1, 69.90),  -- Alas de Sangre
+(9, 5, 13, 1, 75.00),  -- Harry Potter y la piedra filosofal
+(10, 5, 2, 1, 89.00),  -- Le dedico mi silencio
+
+-- Orden 6: Total 156.90
+(11, 6, 6, 1, 49.90),  -- Pecas y Manchas
+(12, 6, 7, 1, 79.00),  -- El espía continental
+(13, 6, 8, 1, 59.00),  -- Huaco retrato
+
+-- Orden 7: Total 85.00
+(14, 7, 20, 1, 85.00),  -- The Subtle Art of Not Giving a F*ck
+
+-- Orden 8: Total 278.00
+(15, 8, 9, 2, 65.00),   -- El año del viento (2 unidades)
+(16, 8, 10, 1, 99.00),  -- La felicidad
+(17, 8, 6, 1, 49.90),   -- Pecas y Manchas
+
+-- Orden 9: Total 145.80
+(18, 9, 12, 2, 38.00),  -- Tokyo Revengers Vol. 1 (2 unidades)
+(19, 9, 14, 1, 69.00),  -- El monstruo de colores
+
+-- Orden 10: Total 204.90
+(20, 10, 15, 1, 89.90),  -- Breves respuestas a las grandes preguntas
+(21, 10, 16, 1, 92.00),  -- Atomic Habits
+(22, 10, 17, 1, 88.50),  -- Rich Dad Poor Dad
+
+-- Orden 11: Total 167.00
+(23, 11, 18, 1, 59.90),  -- The Great Gatsby
+(24, 11, 19, 1, 66.60),  -- Where the Crawdads Sing
+(25, 11, 21, 1, 39.90),  -- El Principito
+
+-- Orden 12: Total 193.80
+(26, 12, 22, 2, 62.00),  -- El hombre en busca de sentido (2 unidades)
+(27, 12, 23, 1, 75.50),  -- Norwegian Wood
+
+-- Orden 13: Total 128.00
+(28, 13, 24, 2, 35.90),  -- Assassination Classroom Vol. 1 (2 unidades)
+(29, 13, 25, 1, 78.00),  -- Los juegos del hambre
+
+-- Orden 14: Total 244.90
+(30, 14, 26, 1, 44.00),  -- El monstruo del armario existe
+(31, 14, 27, 1, 99.90),  -- Una tierra prometida
+(32, 14, 28, 1, 65.00),  -- El amante japonés
+(33, 14, 29, 1, 48.90),  -- Berserk Vol. 1
+
+-- Orden 15: Total 114.90
+(34, 15, 30, 1, 69.00),  -- Heartstopper Vol. 1
+(35, 15, 6, 1, 49.90),   -- Pecas y Manchas
+
+-- Orden 16: Total 189.50
+(36, 16, 31, 1, 82.50),  -- El poder del ahora
+(37, 16, 32, 1, 74.00),  -- Educated
+(38, 16, 33, 1, 56.90),  -- The Catcher in the Rye
+
+-- Orden 17: Total 158.00
+(39, 17, 34, 1, 76.00),  -- It Ends with Us
+(40, 17, 35, 1, 90.00),  -- Dune
+
+-- Orden 18: Total 176.90
+(41, 18, 36, 1, 78.90),  -- La sombra del viento
+(42, 18, 37, 2, 32.00),  -- Naruto Vol. 1 (2 unidades)
+(43, 18, 38, 1, 69.00),  -- Cazadores de sombras
+
+-- Orden 19: Total 97.00
+(44, 19, 39, 1, 42.00),  -- La ovejita que vino a cenar
+(45, 19, 40, 1, 86.00),  -- Can't Hurt Me
+
+-- Orden 20: Total 223.80
+(46, 20, 41, 1, 84.00),  -- Rayuela
+(47, 20, 42, 1, 59.90),  -- El código Da Vinci
+(48, 20, 43, 1, 92.00),  -- Atomic Habits
+
+-- Orden 21: Total 142.50
+(49, 21, 44, 2, 34.90),  -- Chainsaw Man Vol. 1 (2 unidades)
+(50, 21, 45, 1, 66.00),  -- A todos los chicos
+
+-- Orden 22: Total 186.00
+(51, 22, 46, 1, 38.90),  -- ¿Dónde está Jhosep?
+(52, 22, 47, 1, 85.00),  -- Becoming
+(53, 22, 48, 1, 49.90),  -- Crónica de una muerte anunciada
+(54, 22, 49, 1, 35.90),  -- One Piece Vol. 1
+
+-- Orden 23: Total 125.90
+(55, 23, 50, 1, 68.00),  -- El corredor del laberinto
+(56, 23, 51, 1, 89.00),  -- Harry Potter
+
+-- Orden 24: Total 159.90
+(57, 24, 52, 1, 54.00),  -- Cómo ganar amigos
+(58, 24, 53, 1, 69.50),  -- The Alchemist
+(59, 24, 54, 1, 63.90),  -- 1984
+
+-- Orden 25: Total 203.60
+(60, 25, 55, 1, 72.00),  -- Las chicas del cable
+(61, 25, 56, 2, 30.00),  -- Pokémon Vol. 1 (2 unidades)
+(62, 25, 57, 1, 75.00),  -- After
+
+-- Orden 26: Total 178.50
+(63, 26, 58, 1, 50.00),  -- Cuentos para entender el mundo
+(64, 26, 59, 1, 98.00),  -- Steve Jobs
+(65, 26, 60, 1, 95.00),  -- 12 reglas para vivir
+
+-- Orden 27: Total 164.90
+(66, 27, 1, 1, 45.90),   -- Cien años de soledad
+(67, 27, 3, 1, 99.00),   -- Sapiens
+(68, 27, 16, 1, 92.00),  -- Atomic Habits
+
+-- Orden 28: Total 191.60
+(69, 28, 17, 1, 88.50),  -- Rich Dad Poor Dad
+(70, 28, 18, 1, 59.90),  -- The Great Gatsby
+(71, 28, 19, 1, 66.60),  -- Where the Crawdads Sing
+
+-- Orden 29: Total 147.90
+(72, 29, 20, 1, 85.00),  -- The Subtle Art
+(73, 29, 22, 1, 62.00),  -- El hombre en busca de sentido
+
+-- Orden 30: Total 236.50
+(74, 30, 23, 1, 75.50),  -- Norwegian Wood
+(75, 30, 25, 1, 78.00),  -- Los juegos del hambre
+(76, 30, 27, 1, 99.90),  -- Una tierra prometida
+
+-- Orden 31: Total 123.90
+(77, 31, 28, 1, 65.00),  -- El amante japonés
+(78, 31, 29, 1, 48.90),  -- Berserk Vol. 1
+(79, 31, 30, 1, 69.00),  -- Heartstopper Vol. 1
+
+-- Orden 32: Total 198.80
+(80, 32, 31, 1, 82.50),  -- El poder del ahora
+(81, 32, 32, 1, 74.00),  -- Educated
+(82, 32, 33, 1, 56.90),  -- The Catcher in the Rye
+
+-- Orden 33: Total 172.40
+(83, 33, 34, 1, 76.00),  -- It Ends with Us
+(84, 33, 35, 1, 90.00),  -- Dune
+(85, 33, 37, 1, 32.00),   -- Naruto Vol. 1
+
+-- Orden 34: Total 215.50
+(86, 34, 36, 1, 78.90),  -- La sombra del viento
+(87, 34, 38, 1, 69.00),  -- Cazadores de sombras
+(88, 34, 40, 1, 86.00),  -- Can't Hurt Me
+
+-- Orden 35: Total 184.00
+(89, 35, 41, 1, 84.00),  -- Rayuela
+(90, 35, 42, 1, 59.90),  -- El código Da Vinci
+(91, 35, 43, 1, 92.00),  -- Atomic Habits
+
+-- Orden 36: Total 167.90
+(92, 36, 44, 2, 34.90),  -- Chainsaw Man Vol. 1 (2 unidades)
+(93, 36, 45, 1, 66.00),  -- A todos los chicos
+(94, 36, 46, 1, 38.90),  -- ¿Dónde está Jhosep?
+
+-- Orden 37: Total 156.40
+(95, 37, 47, 1, 85.00),  -- Becoming
+(96, 37, 48, 1, 49.90),  -- Crónica de una muerte anunciada
+(97, 37, 49, 1, 35.90),  -- One Piece Vol. 1
+
+-- Orden 38: Total 143.80
+(98, 38, 50, 1, 68.00),  -- El corredor del laberinto
+(99, 38, 51, 1, 89.00),  -- Harry Potter
+
+-- Orden 39: Total 201.50
+(100, 39, 52, 1, 54.00), -- Cómo ganar amigos
+(101, 39, 53, 1, 69.50), -- The Alchemist
+(102, 39, 54, 1, 63.90), -- 1984
+(103, 39, 55, 1, 72.00), -- Las chicas del cable
+
+-- Orden 40: Total 178.90
+(104, 40, 56, 2, 30.00), -- Pokémon Vol. 1 (2 unidades)
+(105, 40, 57, 1, 75.00), -- After
+(106, 40, 58, 1, 50.00), -- Cuentos para entender el mundo
+
+-- Orden 41: Total 189.60
+(107, 41, 59, 1, 98.00), -- Steve Jobs
+(108, 41, 60, 1, 95.00), -- 12 reglas para vivir
+
+-- Orden 42: Total 165.30
+(109, 42, 1, 2, 45.90),  -- Cien años de soledad (2 unidades)
+(110, 42, 3, 1, 99.00),  -- Sapiens
+
+-- Orden 43: Total 234.80
+(111, 43, 5, 1, 69.90),  -- Alas de Sangre
+(112, 43, 7, 1, 79.00),  -- El espía continental
+(113, 43, 9, 1, 65.00),  -- El año del viento
+(114, 43, 11, 1, 55.50), -- El psicoanalista
+
+-- Orden 44: Total 156.90
+(115, 44, 12, 2, 38.00), -- Tokyo Revengers Vol. 1 (2 unidades)
+(116, 44, 13, 1, 75.00), -- Harry Potter
+(117, 44, 14, 1, 69.00),  -- El monstruo de colores
+
+-- Orden 45: Total 187.50
+(118, 45, 15, 1, 89.90), -- Breves respuestas
+(119, 45, 16, 1, 92.00), -- Atomic Habits
+(120, 45, 24, 1, 35.90);  -- Assassination Classroom
+
+-- CART - Carritos de compras activos
+INSERT INTO CART (ID, USER_ID, TOTAL_PRICE) VALUES
+(1, 1, 164.00),   -- Usuario 1: Sapiens + El psicoanalista + Tokyo Revengers
+(2, 5, 144.90),   -- Usuario 5: Berserk + El poder del ahora + Heartstopper
+(3, 8, 228.90),   -- Usuario 8: Norwegian Wood + Los juegos del hambre + Cómo ganar amigos + Steve Jobs
+(4, 12, 195.40),  -- Usuario 12: Dune + The Alchemist + Naruto + El Principito
+(5, 15, 159.90),  -- Usuario 15: The Great Gatsby + Rayuela + El monstruo de colores
+(6, 18, 241.90),  -- Usuario 18: Una tierra prometida + El amante japonés + It Ends with Us + El código Da Vinci
+(7, 22, 134.90),  -- Usuario 22: Chainsaw Man + A todos los chicos + Pokémon
+(8, 25, 217.50),  -- Usuario 25: Educated + Can't Hurt Me + La sombra del viento + El corredor del laberinto
+(9, 28, 187.40),  -- Usuario 28: 1984 + 12 reglas para vivir + Atomic Habits
+(10, 35, 203.80), -- Usuario 35: Becoming + One Piece + Cuentos para entender + Harry Potter
+(11, 40, 149.90), -- Usuario 40: El monstruo de colores + Rich Dad Poor Dad + El Principito
+(12, 45, 234.50), -- Usuario 45: Dune + La sombra del viento + Breves respuestas + El hombre en busca de sentido
+(13, 50, 178.00), -- Usuario 50: The Great Gatsby + The Alchemist + Berserk Vol 1
+(14, 55, 156.80), -- Usuario 55: Heartstopper + Tokyo Revengers + El psicoanalista
+(15, 60, 199.80); -- Usuario 60: Norwegian Wood + El código Da Vinci + El corredor del laberinto
+
+-- CART_ITEM
+INSERT INTO CART_ITEM (ID, CART_ID, BOOK_ID, QUANTITY, UNIT_PRICE) VALUES
+-- Carrito 1 (Usuario 1) - Total: 164.00
+(1, 1, 3, 1, 99.00),   -- Sapiens
+(2, 1, 11, 1, 55.50),  -- El psicoanalista
+(3, 1, 12, 1, 38.00),  -- Tokyo Revengers Vol. 1
+
+-- Carrito 2 (Usuario 5) - Total: 144.90
+(4, 2, 29, 1, 48.90),  -- Berserk Vol. 1
+(5, 2, 31, 1, 82.50),  -- El poder del ahora
+(6, 2, 30, 1, 69.00),  -- Heartstopper Vol. 1
+
+-- Carrito 3 (Usuario 8) - Total: 228.90
+(7, 3, 23, 1, 75.50),  -- Norwegian Wood
+(8, 3, 25, 1, 78.00),  -- Los juegos del hambre
+(9, 3, 52, 1, 54.00),  -- Cómo ganar amigos
+(10, 3, 59, 1, 98.00), -- Steve Jobs
+
+-- Carrito 4 (Usuario 12) - Total: 195.40
+(11, 4, 35, 1, 90.00), -- Dune
+(12, 4, 53, 1, 69.50), -- The Alchemist
+(13, 4, 37, 1, 32.00), -- Naruto Vol. 1
+(14, 4, 21, 1, 39.90), -- El Principito
+
+-- Carrito 5 (Usuario 15) - Total: 159.90
+(15, 5, 18, 1, 59.90), -- The Great Gatsby
+(16, 5, 41, 1, 84.00), -- Rayuela
+(17, 5, 14, 1, 69.00), -- El monstruo de colores
+
+-- Carrito 6 (Usuario 18) - Total: 241.90
+(18, 6, 27, 1, 99.90), -- Una tierra prometida
+(19, 6, 28, 1, 65.00), -- El amante japonés
+(20, 6, 34, 1, 76.00), -- It Ends with Us
+(21, 6, 42, 1, 59.90), -- El código Da Vinci
+
+-- Carrito 7 (Usuario 22) - Total: 134.90
+(22, 7, 44, 2, 34.90), -- Chainsaw Man Vol. 1 (2 unidades)
+(23, 7, 45, 1, 66.00), -- A todos los chicos
+(24, 7, 56, 1, 30.00), -- Pokémon Vol. 1
+
+-- Carrito 8 (Usuario 25) - Total: 217.50
+(25, 8, 32, 1, 74.00), -- Educated
+(26, 8, 40, 1, 86.00), -- Can't Hurt Me
+(27, 8, 36, 1, 78.90), -- La sombra del viento
+(28, 8, 50, 1, 68.00), -- El corredor del laberinto
+
+-- Carrito 9 (Usuario 28) - Total: 187.40
+(29, 9, 54, 1, 63.90), -- 1984
+(30, 9, 60, 1, 95.00), -- 12 reglas para vivir
+(31, 9, 16, 1, 92.00), -- Atomic Habits
+
+-- Carrito 10 (Usuario 35) - Total: 203.80
+(32, 10, 47, 1, 85.00), -- Becoming
+(33, 10, 49, 1, 35.90), -- One Piece Vol. 1
+(34, 10, 58, 1, 50.00), -- Cuentos para entender el mundo
+(35, 10, 13, 1, 75.00), -- Harry Potter y la piedra filosofal
+
+-- Carrito 11 (Usuario 40) - Total: 149.90
+(36, 11, 14, 1, 69.00), -- El monstruo de colores
+(37, 11, 17, 1, 88.50), -- Rich Dad Poor Dad
+(38, 11, 21, 1, 39.90), -- El Principito
+
+-- Carrito 12 (Usuario 45) - Total: 234.50
+(39, 12, 35, 1, 90.00), -- Dune
+(40, 12, 36, 1, 78.90), -- La sombra del viento
+(41, 12, 15, 1, 89.90), -- Breves respuestas a las grandes preguntas
+(42, 12, 22, 1, 62.00), -- El hombre en busca de sentido
+
+-- Carrito 13 (Usuario 50) - Total: 178.00
+(43, 13, 18, 1, 59.90), -- The Great Gatsby
+(44, 13, 53, 1, 69.50), -- The Alchemist
+(45, 13, 29, 1, 48.90), -- Berserk Vol. 1
+
+-- Carrito 14 (Usuario 55) - Total: 156.80
+(46, 14, 30, 1, 69.00), -- Heartstopper Vol. 1
+(47, 14, 12, 2, 38.00), -- Tokyo Revengers Vol. 1 (2 unidades)
+(48, 14, 11, 1, 55.50), -- El psicoanalista
+
+-- Carrito 15 (Usuario 60) - Total: 199.80
+(49, 15, 23, 1, 75.50), -- Norwegian Wood
+(50, 15, 42, 1, 59.90), -- El código Da Vinci
+(51, 15, 50, 1, 68.00); -- El corredor del laberinto
 
 -- WISHLISTS
-INSERT INTO WISHLISTS (ID, USER_ID, NAME, IS_PUBLIC, CREATED_AT) VALUES
-(1, 1, 'Para leer pronto', 1, '2024-02-10 12:30:00'),
-(2, 1, 'Regalos navideños', 0, '2024-02-10 12:35:00'),
-(3, 2, 'Mi lista de deseos', 1, '2024-02-12 15:20:00'),
-(4, 3, 'Fantasía épica pendiente', 1, '2024-02-14 10:45:00'),
-(5, 4, 'Ciencia ficción clásica', 1, '2024-02-16 17:30:00'),
-(6, 5, 'Thrillers recomendados', 0, '2024-02-18 14:15:00');
+INSERT INTO WISHLISTS (ID, USER_ID, NAME) VALUES
+(1, 3, 'Mis próximas lecturas'),
+(2, 6, 'Libros para regalar'),
+(3, 9, 'Clásicos pendientes'),
+(4, 11, 'Fantasía y aventura'),
+(5, 13, 'Desarrollo personal'),
+(6, 16, 'Literatura latinoamericana'),
+(7, 19, 'Manga favoritos'),
+(8, 21, 'Para leer en vacaciones'),
+(9, 23, 'Biografías inspiradoras'),
+(10, 26, 'Ciencia ficción'),
+(11, 29, 'Novelas románticas'),
+(12, 31, 'Libros infantiles para mis hijos'),
+(13, 33, 'Thrillers y misterio'),
+(14, 36, 'Autoayuda y motivación'),
+(15, 38, 'Literatura universal'),
+(16, 41, 'Saga juvenil'),
+(17, 43, 'Educación y aprendizaje'),
+(18, 46, 'Aventuras épicas'),
+(19, 48, 'Psicología y filosofía'),
+(20, 51, 'Cómics y novelas gráficas'),
+(21, 53, 'Lista de navidad'),
+(22, 56, 'Recomendaciones de amigos'),
+(23, 58, 'Libros para el club de lectura'),
+(24, 2, 'Favoritos de siempre'),
+(25, 4, 'Para ampliar horizontes');
 
 -- WISHLIST_ITEMS
 INSERT INTO WISHLIST_ITEMS (ID, WISHLIST_ID, BOOK_ID) VALUES
-(1, 1, 2),
-(2, 1, 4),
-(3, 1, 8),
-(4, 2, 7),
-(5, 3, 1),
-(6, 3, 6),
-(7, 4, 1),
-(8, 4, 2),
-(9, 5, 2),
-(10, 5, 3),
-(11, 6, 5),
-(12, 6, 8);
+-- Wishlist 1 (Usuario 3) - Mis próximas lecturas
+(1, 1, 1),   -- Cien años de soledad
+(2, 1, 23),  -- Norwegian Wood
+(3, 1, 36),  -- La sombra del viento
+(4, 1, 41),  -- Rayuela
+(5, 1, 48),  -- Crónica de una muerte anunciada
 
--- COUPONS
-INSERT INTO COUPONS (ID, CODE, DESCRIPTION, DISCOUNT_TYPE, DISCOUNT_VALUE, MIN_ORDER_AMOUNT, VALID_FROM, VALID_UNTIL) VALUES
-(1, 'BIENVENIDA20', 'Descuento de bienvenida para nuevos usuarios', 'percentage', 20.00, 25.00, '2024-01-01 00:00:00', '2024-12-31 23:59:59'),
-(2, 'VERANO2024', 'Descuento especial de verano', 'percentage', 15.00, 30.00, '2024-06-01 00:00:00', '2024-08-31 23:59:59'),
-(3, 'ENVIOGRATIS', 'Envío gratuito en pedidos superiores a 40€', 'fixed_amount', 5.99, 40.00, '2024-01-01 00:00:00', '2024-12-31 23:59:59'),
-(4, 'PREMIUM10', 'Descuento exclusivo para usuarios premium', 'percentage', 10.00, 20.00, '2024-01-01 00:00:00', '2024-12-31 23:59:59'),
-(5, 'BLACKFRIDAY', 'Descuento Black Friday', 'percentage', 25.00, 50.00, '2024-11-24 00:00:00', '2024-11-30 23:59:59');
+-- Wishlist 2 (Usuario 6) - Libros para regalar
+(6, 2, 21),  -- El Principito
+(7, 2, 14),  -- El monstruo de colores
+(8, 2, 39),  -- La ovejita que vino a cenar
+(9, 2, 46),  -- ¿Dónde está Jhosep?
+(10, 2, 58), -- Cuentos para entender el mundo
 
--- USER_COUPONS
-INSERT INTO USER_COUPONS (ID, USER_ID, COUPON_ID, ORDER_ID) VALUES
-(1, 2, 1, 2),
-(2, 3, 4, 3),
-(3, 1, 3, 1),
-(4, 5, 1, 5);
+-- Wishlist 3 (Usuario 9) - Clásicos pendientes
+(11, 3, 18), -- The Great Gatsby
+(12, 3, 33), -- The Catcher in the Rye
+(13, 3, 35), -- Dune
+(14, 3, 54), -- 1984
+(15, 3, 53), -- The Alchemist
+
+-- Wishlist 4 (Usuario 11) - Fantasía y aventura
+(16, 4, 13), -- Harry Potter y la piedra filosofal
+(17, 4, 25), -- Los juegos del hambre
+(18, 4, 38), -- Cazadores de sombras
+(19, 4, 50), -- El corredor del laberinto
+(20, 4, 5),  -- Alas de Sangre
+
+-- Wishlist 5 (Usuario 13) - Desarrollo personal
+(21, 5, 16), -- Atomic Habits
+(22, 5, 20), -- The Subtle Art of Not Giving a F*ck
+(23, 5, 31), -- El poder del ahora
+(24, 5, 40), -- Can't Hurt Me
+(25, 5, 60), -- 12 reglas para vivir
+
+-- Wishlist 6 (Usuario 16) - Literatura latinoamericana
+(26, 6, 2),  -- Le dedico mi silencio
+(27, 6, 7),  -- El espía continental
+(28, 6, 8),  -- Huaco retrato
+(29, 6, 9),  -- El año del viento
+(30, 6, 28), -- El amante japonés
+
+-- Wishlist 7 (Usuario 19) - Manga favoritos
+(31, 7, 4),  -- Demon Slayer Vol. 1
+(32, 7, 12), -- Tokyo Revengers Vol. 1
+(33, 7, 24), -- Assassination Classroom Vol. 1
+(34, 7, 29), -- Berserk Vol. 1
+(35, 7, 37), -- Naruto Vol. 1
+(36, 7, 44), -- Chainsaw Man Vol. 1
+(37, 7, 49), -- One Piece Vol. 1
+(38, 7, 56), -- Pokémon: Vol. 1
+
+-- Wishlist 8 (Usuario 21) - Para leer en vacaciones
+(39, 8, 19), -- Where the Crawdads Sing
+(40, 8, 34), -- It Ends with Us
+(41, 8, 42), -- El código Da Vinci
+(42, 8, 45), -- A todos los chicos de los que me enamoré
+(43, 8, 57), -- After
+
+-- Wishlist 9 (Usuario 23) - Biografías inspiradoras
+(44, 9, 27), -- Una tierra prometida
+(45, 9, 32), -- Educated
+(46, 9, 47), -- Becoming
+(47, 9, 59), -- Steve Jobs
+
+-- Wishlist 10 (Usuario 26) - Ciencia ficción
+(48, 10, 35), -- Dune
+(49, 10, 54), -- 1984
+(50, 10, 3),  -- Sapiens
+(51, 10, 15), -- Breves respuestas a las grandes preguntas
+
+-- Wishlist 11 (Usuario 29) - Novelas románticas
+(52, 11, 30), -- Heartstopper Vol. 1
+(53, 11, 34), -- It Ends with Us
+(54, 11, 45), -- A todos los chicos de los que me enamoré
+(55, 11, 57), -- After
+
+-- Wishlist 12 (Usuario 31) - Libros infantiles para mis hijos
+(56, 12, 14), -- El monstruo de colores
+(57, 12, 21), -- El Principito
+(58, 12, 26), -- El monstruo del armario existe
+(59, 12, 39), -- La ovejita que vino a cenar
+(60, 12, 46), -- ¿Dónde está Jhosep?
+
+-- Wishlist 13 (Usuario 33) - Thrillers y misterio
+(61, 13, 11), -- El psicoanalista
+(62, 13, 36), -- La sombra del viento
+(63, 13, 42), -- El código Da Vinci
+
+-- Wishlist 14 (Usuario 36) - Autoayuda y motivación
+(64, 14, 16), -- Atomic Habits
+(65, 14, 17), -- Rich Dad Poor Dad
+(66, 14, 52), -- Cómo ganar amigos
+(67, 14, 60), -- 12 reglas para vivir
+
+-- Wishlist 15 (Usuario 38) - Literatura universal
+(68, 15, 18), -- The Great Gatsby
+(69, 15, 23), -- Norwegian Wood
+(70, 15, 33), -- The Catcher in the Rye
+(71, 15, 41), -- Rayuela
+
+-- Wishlist 16 (Usuario 41) - Saga juvenil
+(72, 16, 13), -- Harry Potter y la piedra filosofal
+(73, 16, 25), -- Los juegos del hambre
+(74, 16, 38), -- Cazadores de sombras
+(75, 16, 50), -- El corredor del laberinto
+
+-- Wishlist 17 (Usuario 43) - Educación y aprendizaje
+(76, 17, 3),  -- Sapiens
+(77, 17, 15), -- Breves respuestas a las grandes preguntas
+(78, 17, 22), -- El hombre en busca de sentido
+(79, 17, 10), -- La felicidad
+
+-- Wishlist 18 (Usuario 46) - Aventuras épicas
+(80, 18, 35), -- Dune
+(81, 18, 1),  -- Cien años de soledad
+(82, 18, 25), -- Los juegos del hambre
+(83, 18, 5),  -- Alas de Sangre
+
+-- Wishlist 19 (Usuario 48) - Psicología y filosofía
+(84, 19, 22), -- El hombre en busca de sentido
+(85, 19, 31), -- El poder del ahora
+(86, 19, 10), -- La felicidad
+(87, 19, 20), -- The Subtle Art of Not Giving a F*ck
+
+-- Wishlist 20 (Usuario 51) - Cómics y novelas gráficas
+(88, 20, 4),  -- Demon Slayer Vol. 1
+(89, 20, 12), -- Tokyo Revengers Vol. 1
+(90, 20, 29), -- Berserk Vol. 1
+(91, 20, 37), -- Naruto Vol. 1
+(92, 20, 49), -- One Piece Vol. 1
+
+-- Wishlist 21 (Usuario 53) - Lista de navidad
+(93, 21, 13), -- Harry Potter y la piedra filosofal
+(94, 21, 21), -- El Principito
+(95, 21, 47), -- Becoming
+(96, 21, 16), -- Atomic Habits
+
+-- Wishlist 22 (Usuario 56) - Recomendaciones de amigos
+(97, 22, 19), -- Where the Crawdads Sing
+(98, 22, 23), -- Norwegian Wood
+(99, 22, 36), -- La sombra del viento
+(100, 22, 32), -- Educated
+
+-- Wishlist 23 (Usuario 58) - Libros para el club de lectura
+(101, 23, 1),  -- Cien años de soledad
+(102, 23, 18), -- The Great Gatsby
+(103, 23, 41), -- Rayuela
+(104, 23, 48), -- Crónica de una muerte anunciada
+
+-- Wishlist 24 (Usuario 2) - Favoritos de siempre
+(105, 24, 21), -- El Principito
+(106, 24, 53), -- The Alchemist
+(107, 24, 22), -- El hombre en busca de sentido
+(108, 24, 35), -- Dune
+
+-- Wishlist 25 (Usuario 4) - Para ampliar horizontes
+(109, 25, 3),  -- Sapiens
+(110, 25, 8),  -- Huaco retrato
+(111, 25, 32), -- Educated
+(112, 25, 59); -- Steve Jobs
+
+INSERT INTO NOTIFICATIONS (USER_ID, TYPE, MESSAGE, IS_READ, CREATED_AT) VALUES
+-- Usuario 1: Notificación de pedido y like
+(1, 'order', 'Tu pedido #1020 ha sido confirmado.', FALSE, '2024-06-01 10:00:00'),
+(1, 'like', 'A María le gustó tu comentario en "Jojofans".', TRUE, '2024-06-04 16:20:00'),
+
+-- Usuario 2: Comentario en publicación
+(2, 'comment', 'Pedro respondió a tu publicación en "Detectives de tinta".', FALSE, '2024-06-02 09:30:00'),
+
+-- Usuario 3: Nueva reseña
+(3, 'review', 'Gracias por reseñar "Le dedico mi silencio".', TRUE, '2024-06-05 14:45:00'),
+
+-- Usuario 4: Publicación en comunidad
+(4, 'post', 'Se ha publicado un nuevo tema en "Cómics y Mangas".', FALSE, '2024-06-03 17:00:00'),
+
+-- Usuario 5: Pedido enviado
+(5, 'shipment', 'Tu pedido #1021 está en camino.', FALSE, '2024-06-06 08:20:00'),
+
+-- Usuario 6–10: Notificaciones variadas
+(6, 'order', 'Tu pedido #1022 ha sido confirmado.', TRUE, '2024-06-02 10:15:00'),
+(7, 'like', 'Carlos le dio like a tu reseña de "Cien años de soledad".', FALSE, '2024-06-03 11:25:00'),
+(8, 'comment', 'Te respondieron en la comunidad "Juvenil".', FALSE, '2024-06-04 19:00:00'),
+(9, 'post', 'Nueva publicación en "Infantil". ¡Participa!', TRUE, '2024-06-05 09:10:00'),
+(10, 'review', 'Tu reseña ha sido publicada con éxito.', TRUE, '2024-06-06 13:45:00'),
+
+-- Usuarios 11–20: pedidos y envíos
+(11, 'order', 'Tu pedido #1023 fue registrado.', FALSE, '2024-06-07 10:00:00'),
+(12, 'shipment', 'Tu pedido #1023 ya fue enviado.', FALSE, '2024-06-08 15:30:00'),
+(13, 'order', 'Pedido #1024 confirmado.', TRUE, '2024-06-09 16:15:00'),
+(14, 'shipment', 'Pedido #1024 enviado.', FALSE, '2024-06-10 10:50:00'),
+(15, 'order', 'Tu pedido fue confirmado.', TRUE, '2024-06-11 13:10:00'),
+(16, 'like', 'Andrea dio like a tu publicación.', TRUE, '2024-06-12 14:00:00'),
+(17, 'comment', 'Respondieron a tu mensaje.', FALSE, '2024-06-13 15:20:00'),
+(18, 'post', 'Nuevo hilo en "Literatura".', FALSE, '2024-06-14 11:00:00'),
+(19, 'review', 'Gracias por tu comentario en "Ficción".', TRUE, '2024-06-15 12:30:00'),
+(20, 'post', 'Explora la nueva publicación destacada.', TRUE, '2024-06-16 09:40:00');

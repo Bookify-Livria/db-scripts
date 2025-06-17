@@ -272,18 +272,7 @@ CREATE TABLE LIKES (
     FOREIGN KEY (USER_ID) REFERENCES USERS(ID)
 );
 
-CART 
-    ID
-    USER_ID (FK -> USERS.ID)
-    TOTAL_PRICE
-    CREATED_AT
-
-CART_ITEM
-    ID
-    QUANTITY
-    UNIT_PRICE
-    CART_ID (FK -> CART.ID)
-    BOOK_ID (FK -> BOOKS.ID)
+<===============================================================>
 
 ORDERS
     ID (PK)
@@ -296,6 +285,22 @@ ORDERS
     SHIPPED_AT
     DELIVERED_AT
 
+CREATE TABLE ORDERS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    USER_ID INT NOT NULL,
+    CLIENT_ID INT NOT NULL,
+    TOTAL_AMOUNT DECIMAL(10,2) NOT NULL,
+    STATUS ENUM('pending', 'confirmed', 'processing', 'shipped', 'delivered') DEFAULT 'pending',
+    NOTES TEXT,
+    CREATED_AT DATETIME DEFAULT CURRENT_TIMESTAMP,
+    SHIPPED_AT DATETIME,
+    DELIVERED_AT DATETIME,
+    FOREIGN KEY (USER_ID) REFERENCES USERS(ID),
+    FOREIGN KEY (CLIENT_ID) REFERENCES CLIENTS(ID)
+);
+
+<===============================================================>
+
 ORDERS_ITEM
     ID (PK)
     ORDER_ID (FK -> ORDERS.ID)
@@ -303,35 +308,94 @@ ORDERS_ITEM
     QUANTITY
     UNIT_PRICE
 
-NOTIFICATIONS
+CREATE TABLE ORDERS_ITEM (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    ORDER_ID INT NOT NULL,
+    BOOK_ID INT NOT NULL,
+    QUANTITY INT NOT NULL CHECK (QUANTITY > 0),
+    UNIT_PRICE DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (ORDER_ID) REFERENCES ORDERS(ID),
+    FOREIGN KEY (BOOK_ID) REFERENCES BOOKS(ID)
+);
+
+<===============================================================>
+
+CART 
     ID
-    TYPE
-    MESSAGE
+    USER_ID (FK -> USERS.ID)
+    TOTAL_PRICE
+
+CREATE TABLE CART (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    USER_ID INT NOT NULL UNIQUE,
+    TOTAL_PRICE DECIMAL(10,2) DEFAULT 0.00,
+    FOREIGN KEY (USER_ID) REFERENCES USERS(ID)
+);
+
+<===============================================================>
+
+CART_ITEM
+    ID
+    QUANTITY
+    UNIT_PRICE
+    CART_ID (FK -> CART.ID)
+    BOOK_ID (FK -> BOOKS.ID)
+
+CREATE TABLE CART_ITEM (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    CART_ID INT NOT NULL,
+    BOOK_ID INT NOT NULL,
+    QUANTITY INT NOT NULL CHECK (QUANTITY > 0),
+    UNIT_PRICE DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (CART_ID) REFERENCES CART(ID),
+    FOREIGN KEY (BOOK_ID) REFERENCES BOOKS(ID)
+);
+
+<===============================================================>
 
 WISHLISTS
     ID (PK)
     USER_ID (FK -> USERS.ID)
     NAME
-    IS_PUBLIC
-    CREATED_AT
-    
+
+CREATE TABLE WISHLISTS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    USER_ID INT NOT NULL,
+    NAME VARCHAR(100) NOT NULL,
+    FOREIGN KEY (USER_ID) REFERENCES USERS(ID)
+);
+
+<===============================================================>
+
 WISHLIST_ITEMS
     ID (PK)
     WISHLIST_ID (FK -> WISHLISTS.ID)
     BOOK_ID (FK -> BOOKS.ID)
 
-COUPONS
-    ID (PK)
-    CODE (UNIQUE)
-    DESCRIPTION
-    DISCOUNT_TYPE (ENUM: 'percentage', 'fixed_amount')
-    DISCOUNT_VALUE (DECIMAL)
-    MIN_ORDER_AMOUNT (DECIMAL)
-    VALID_FROM
-    VALID_UNTIL
+CREATE TABLE WISHLIST_ITEMS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    WISHLIST_ID INT NOT NULL,
+    BOOK_ID INT NOT NULL,
+    FOREIGN KEY (WISHLIST_ID) REFERENCES WISHLISTS(ID),
+    FOREIGN KEY (BOOK_ID) REFERENCES BOOKS(ID),
+    UNIQUE (WISHLIST_ID, BOOK_ID)  -- evita duplicar libros en la misma wishlist
+);
 
-USER_COUPONS
-    ID (PK)
-    USER_ID (FK -> USERS.ID)
-    COUPON_ID (FK -> COUPONS.ID)
-    ORDER_ID (FK -> ORDERS.ID)
+<===============================================================>
+
+NOTIFICATIONS
+    ID
+    TYPE
+    MESSAGE
+
+CREATE TABLE NOTIFICATIONS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    USER_ID INT NOT NULL,
+    TYPE ENUM('order', 'shipment', 'like', 'comment', 'review', 'post') NOT NULL,
+    MESSAGE TEXT NOT NULL,
+    IS_READ BOOLEAN DEFAULT FALSE,
+    CREATED_AT DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (USER_ID) REFERENCES USERS(ID)
+);
+
+<===============================================================>
